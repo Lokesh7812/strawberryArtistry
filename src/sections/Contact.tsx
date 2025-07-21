@@ -41,9 +41,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-gray-900">Address</h3>
                       <p className="text-gray-600 text-sm sm:text-base">
-                        123 Beauty Street<br />
-                        Anna Nagar, Madurai<br />
-                        Tamil Nadu 625020
+                         HIG-11, 80 Feet Rd, next to Midas, New LIG Colony, Anna Nagar, Madurai<br />
+                        , Tamil Nadu 625020
                       </p>
                     </div>
                   </div>
@@ -55,8 +54,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600 text-sm sm:text-base">+91 9876543210</p>
-                      <p className="text-gray-600 text-sm sm:text-base">+91 9876543211</p>
+                      <p className="text-gray-600 text-sm sm:text-base">+91 90809 25492</p>
+                      
                     </div>
                   </div>
 
@@ -67,8 +66,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600 text-sm sm:text-base">info@strawberryartistry.com</p>
-                      <p className="text-gray-600 text-sm sm:text-base">bookings@strawberryartistry.com</p>
+                      <p className="text-gray-600 text-sm sm:text-base">strawberryartistry@gmail.com</p>
+                      
                     </div>
                   </div>
 
