@@ -91,7 +91,7 @@ const About = () => {
               <div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-shimmer">Our Story</h2>
                 <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-                Founded in 2019, Strawberry Artistry began as a dream to create a space where beauty meets 
+                Founded in 2012, Strawberry Artistry began as a dream to create a space where beauty meets 
                 artistry. What started as a small beauty parlour in Madurai has grown into a comprehensive 
                 beauty destination and academy, serving hundreds of brides and students.
                 </p>
