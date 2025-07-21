@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        strawberry: {
+          50: '#fdf2f8',
+          100: '#fce7f3',
+          200: '#fbcfe8',
+          300: '#f9a8d4',
+          400: '#f472b6',
+          500: '#ec4899',
+          600: '#FF6B9D',
+          700: '#be185d',
+          800: '#9d174d',
+          900: '#831843',
+        },
+        'rose-gold': {
+          50: '#fdf8f6',
+          100: '#f2e8e5',
+          200: '#eaddd7',
+          300: '#e0c4b7',
+          400: '#d2a084',
+          500: '#E8B4B8',
+          600: '#cd853f',
+          700: '#b8860b',
+          800: '#8b4513',
+          900: '#654321',
+        },
+        champagne: {
+          50: '#fefdfb',
+          100: '#fef7e0',
+          200: '#F7E7CE',
+          300: '#f4e4bc',
+          400: '#f0d998',
+          500: '#ebc671',
+          600: '#d4a528',
+          700: '#b8941f',
+          800: '#9a7b19',
+          900: '#7d6317',
+        },
+        berry: {
+          50: '#fdf2f8',
+          100: '#fce7f3',
+          200: '#fbcfe8',
+          300: '#f9a8d4',
+          400: '#f472b6',
+          500: '#ec4899',
+          600: '#8B1538',
+          700: '#be185d',
+          800: '#9d174d',
+          900: '#831843',
+        }
+      },
+      fontFamily: {
+        'serif': ['Playfair Display', 'serif'],
+        'sans': ['Inter', 'sans-serif'],
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'spin-reverse': 'spin-reverse 1s linear infinite',
+        'fade-in-up': 'fade-in-up 0.6s ease-out',
+        'fade-in-left': 'fade-in-left 0.6s ease-out',
+        'fade-in-right': 'fade-in-right 0.6s ease-out',
+        'shimmer': 'shimmer 2s infinite',
+      },
+    },
+  },
+  plugins: [],
+};
