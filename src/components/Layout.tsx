@@ -134,7 +134,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <a href="https://www.instagram.com/strawberry__artistry?igsh=ZXp2OWZ1a3lpMDA=" className="text-gray-400 hover:text-strawberry-400 transition-colors">
                   <Instagram size={18} className="sm:w-5 sm:h-5" />
                 </a>
-                <a href="https://www.instagram.com/strawberry__artistry?igsh=ZXp2OWZ1a3lpMDA=" className="text-gray-400 hover:text-strawberry-400 transition-colors">
+                <a href="https://www.facebook.com/share/1BczAR6Tho/" className="text-gray-400 hover:text-strawberry-400 transition-colors">
                   <Facebook size={18} className="sm:w-5 sm:h-5" />
                 </a>
                 <a href="https://youtube.com/@strawberryartistry5232?si=NNColYWPKr5OwV3o" className="text-gray-400 hover:text-strawberry-400 transition-colors">
