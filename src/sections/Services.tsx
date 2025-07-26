@@ -51,214 +51,212 @@ const services: Service[] = [
   {
     id: 'hair-extensions',
     title: 'Hair Extensions',
-    description: 'Add length & volume with premium quality extensions',
+    description: 'Add length & volume with premium quality extensions made from 100% real natural human hair. Transform your look instantly with our premium extensions, available in various lengths, colors, and textures to perfectly match your natural hair.',
     icon: <Crown className="w-6 h-6" />,
     category: 'hair',
     details: 'Transform your look instantly with our premium hair extensions. We offer various lengths, colours, and textures to match your natural hair perfectly.',
     image: HairImg
   },
+ 
   {
     id: 'microblading-eyebrow',
     title: 'Eyebrow Microblading',
-    description: 'Perfect eyebrows with semi-permanent technique',
+    description: 'Achieve the perfect eyebrows with our semi-permanent microblading technique. Designed to create natural-looking, defined brows that suit your face shape. Ideal for those with sparse, uneven, or thin brows.',
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
-    details: 'Achieve perfectly shaped eyebrows with our expert microblading service. Semi-permanent results that last 1–2 years.',
+    details: 'Eyebrow microblading involves implanting pigments into the skin using fine strokes to mimic natural hairs. This creates fuller, well-shaped brows that last 1–2 years. The procedure is safe, painless, and customized for your features. Perfect for effortless beauty every day.',
     image: MicrobladingImg
   },
   {
     id: 'microblading-scalp',
     title: 'Scalp Pigmentation',
-    description: 'Hair-like pigmentation for fuller-looking scalp',
+    description: 'Restore the look of natural hair density with our scalp pigmentation technique. Ideal for men and women experiencing thinning hair or bald spots. Creates a realistic illusion of fuller hair instantly.',
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
-    details: 'Restore the appearance of hair density with our scalp pigmentation microblading. A great solution for thinning hair.',
+    details: 'Scalp micropigmentation is a non-surgical procedure that deposits pigment into the scalp, simulating hair follicles. It provides a natural, clean look and improves confidence. Long-lasting, low-maintenance, and suitable for all hair types. Perfect for thinning hair solutions.',
     // image: ScalpPigmentationImg
   },
   {
     id: 'microblading-lip',
     title: 'Lip Pigmentation',
-    description: 'Enhance lip colour and shape with microblading',
+    description: 'Enhance your lips with a soft, natural tint through semi-permanent lip pigmentation. Achieve symmetrical, fuller-looking lips without the need for constant lipstick application. Safe and long-lasting technique.',
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
-    details: 'Add natural tint and definition to your lips with our lip pigmentation microblading technique. Long-lasting and safe.',
+    details: 'Lip pigmentation microblading enhances your lip color and shape with natural pigments. It helps correct asymmetry and adds definition for a youthful look. The results last for months and require minimal upkeep. Perfect for anyone who desires effortless, beautiful lips every day.',
     // image: LipPigmentationImg
   },
   {
     id: 'hair-spa',
     title: 'Hair Spa',
-    description: 'Deep conditioning & relaxation treatment',
+    description: 'Indulge in a luxurious hair spa for deep nourishment and relaxation. Designed to repair damage, improve scalp health, and restore shine. Perfect for all hair types, including chemically treated hair.',
     icon: <Droplets className="w-6 h-6" />,
     category: 'hair',
-    details: 'Rejuvenate your hair and scalp with our luxurious spa treatment. Includes deep conditioning, massage, and steam therapy.',
+    details: 'Our hair spa treatment includes deep conditioning, scalp massage, and steam therapy for complete rejuvenation. It strengthens the roots, adds softness, and improves circulation for healthy growth. Ideal for dry, frizzy, or damaged hair in need of intense care.',
     image: HairSpaImg
   },
   {
     id: 'keratin',
     title: 'Keratin Treatment',
-    description: 'Smooth, frizz-free hair transformation',
+    description: 'Transform frizzy, unmanageable hair into silky smooth locks with our keratin treatment. A long-lasting solution for soft, shiny, and straight hair that stays frizz-free for months.',
     icon: <Sparkles className="w-6 h-6" />,
     category: 'hair',
-    details: 'Eliminate frizz and achieve silky smooth hair with our professional keratin treatment. Results last 3-4 months.',
+    details: 'Keratin treatment coats your hair with natural proteins that eliminate frizz and restore smoothness. It strengthens hair, adds shine, and makes styling easy. The results last up to 3–4 months with proper maintenance. Perfect for a salon-smooth finish every day.',
     image: KeratinTreatmentImg
   },
   {
     id: 'hair-colouring',
     title: 'Hair Colouring',
-    description: 'Trendy or classic shades to suit your style',
+    description: 'Discover a range of vibrant and natural hair color options with our professional coloring services. Whether you want bold highlights or a complete transformation, we have the perfect shade for you.',
     icon: <Palette className="w-6 h-6" />,
     category: 'hair',
-    details: 'Express yourself with vibrant colours or classic tones. Our colourists use premium products for long-lasting, healthy results.',
+    details: 'Our experts use premium, ammonia-free colors to ensure healthy and shiny results. From trendy balayage to classic global coloring, we create shades that complement your style and skin tone. Long-lasting color with zero damage to your hair’s texture and health.',
     image: HairColoringImg
   },
   {
     id: 'hair-botox',
     title: 'Hair Botox',
-    description: 'Revive damaged hair with intensive repair',
+    description: 'Revive dull, damaged hair with our advanced hair botox treatment. Deeply nourishes strands, repairs split ends, and restores elasticity for a youthful, healthy look.',
     icon: <Heart className="w-6 h-6" />,
     category: 'hair',
-    details: 'Restore your hair\'s health and shine with our intensive hair botox treatment. Perfect for damaged or chemically treated hair.',
+    details: 'Hair Botox is a chemical-free, deep-conditioning treatment that smooths and strengthens your hair from within. It repairs damage caused by heat, pollution, and chemicals. Leaves hair soft, manageable, and frizz-free for weeks. Perfect for restoring shine and vitality.',
     image: HairBotoxImg
   },
   {
     id: 'hair-smoothening',
     title: 'Hair Smoothening Treatment',
-    description: 'Straighten & shine for manageable hair',
+    description: 'Get soft, silky, and straight hair with our professional smoothening service. Tames frizz, reduces volume, and makes your hair easy to manage without damaging chemicals.',
     icon: <Zap className="w-6 h-6" />,
     category: 'hair',
-    details: 'Achieve silky straight and frizz-free hair with our professional smoothening treatment. Perfect for taming unmanageable hair and reducing daily styling efforts.',
+    details: 'Hair smoothening uses safe solutions to relax hair bonds and achieve a natural straight look. It eliminates frizz, adds shine, and keeps your hair manageable for weeks. Perfect for those who want sleek hair without harsh treatments like rebonding.',
     image: HairSmootheningImg
   },
   {
     id: 'hair-dandruff-treatment',
     title: 'Hair Dandruff Treatment',
-    description: 'Say goodbye to dandruff and scalp irritation',
+    description: 'Say goodbye to dandruff and itchy scalp with our specialized dandruff care. Soothes irritation, removes flakes, and restores scalp health for stronger, healthier hair.',
     icon: <Zap className="w-6 h-6" />,
     category: 'hair',
-    details: 'Treat persistent dandruff and soothe your scalp with our targeted anti-dandruff hair therapy. Promotes a healthier, itch-free scalp and stronger hair.',
+    details: 'Our dandruff treatment targets the root cause of scalp flakes using medicated solutions and scalp therapy. It relieves dryness, reduces inflammation, and promotes a healthy scalp environment. Regular sessions ensure lasting results and beautiful, dandruff-free hair.',
     // image: HairDandruffImg
   },
   {
     id: 'hair-growth',
     title: 'Hair Growth Treatment',
-    description: 'Boost density naturally with proven methods',
+    description: 'Boost natural hair growth with our proven therapy sessions. Strengthens roots, reduces hair fall, and promotes thicker, healthier strands over time.',
     icon: <RefreshCw className="w-6 h-6" />,
     category: 'hair',
-    details: 'Stimulate natural hair growth with our specialized treatments. Combines scalp therapy, nutrition, and advanced techniques.',
+    details: 'Our hair growth treatment combines advanced scalp therapy, nourishing serums, and lifestyle guidance to improve follicle strength. It stimulates growth and prevents thinning. Suitable for both men and women looking for a natural, long-term hair solution.',
     image: HairGrowthImg
   },
   {
     id: 'global-colouring',
     title: 'Global Hair Coloring',
-    description: 'Full-head colour change for dramatic transformation',
+    description: 'Experience a complete color makeover with our global coloring service. Perfect for those looking for a bold transformation or a rich, uniform shade across all strands.',
     icon: <PaintBucket className="w-6 h-6" />,
     category: 'hair',
-    details: 'Complete colour transformation with our global colouring service. Perfect for those ready for a bold new look.',
+    details: 'Global coloring provides full-head coverage in your desired shade, from natural tones to vibrant colors. We use high-quality, ammonia-free products that protect your hair. Get a stunning new look with long-lasting shine and minimal maintenance.',
     image: GlobalColoringImg
   },
   {
     id: 'hydra-facial',
     title: 'Hydra Facial',
-    description: 'Hydration, cleansing & instant glow',
+    description: 'Rejuvenate your skin with our hydra facial that deeply cleanses, exfoliates, and hydrates. Perfect for achieving an instant glow for all skin types.',
     icon: <Sun className="w-6 h-6" />,
     category: 'skin',
-    details: 'Experience the ultimate facial treatment that cleanses, hydrates, and reveals radiant skin in just one session.',
+    details: 'Our hydra facial treatment combines cleansing, exfoliation, hydration, and antioxidant protection in one session. It removes impurities, unclogs pores, and restores radiance. Gentle yet effective, it leaves your skin refreshed, plump, and glowing instantly.',
     image: HydraFacialImg
   },
   {
     id: 'chemical-peel',
     title: 'Chemical Peel',
-    description: 'Skin resurfacing & rejuvenation therapy',
+    description: 'Reveal youthful, radiant skin with our professional chemical peel treatments. Helps reduce dark spots, scars, and uneven texture for smoother skin.',
     icon: <Star className="w-6 h-6" />,
     category: 'skin',
-    details: 'Reveal fresh, youthful skin with our professional chemical peel treatments. Various strengths available for all skin types.',
+    details: 'Chemical peels exfoliate the top layers of your skin to remove dead cells and promote regeneration. This reduces pigmentation, acne scars, and fine lines. Suitable for all skin types, with customized strength levels for safe and effective results.',
     image: ChemicalPeelImg
   },
   {
     id: 'skin-brightening',
     title: 'Skin Brightening',
-    description: 'Even tone and enhanced radiance',
+    description: 'Get an even, radiant complexion with our skin brightening treatments. Reduces dark spots and dullness for a glowing, healthy look.',
     icon: <Sparkles className="w-6 h-6" />,
     category: 'skin',
-    details: 'Achieve luminous, even-toned skin with our specialized brightening treatments. Reduces dark spots and enhances natural glow.',
+    details: 'Our skin brightening therapy targets pigmentation and uneven tone using safe, dermatologist-approved products. It enhances natural glow, improves clarity, and reduces tanning effects. Perfect for restoring your skin’s brightness and confidence.',
     image: SkinBrighteningImg
   },
   {
     id: 'nail-art',
     title: 'Nail Art & Care',
-    description: 'Creative nail designs & professional care',
+    description: 'Express your creativity with our stylish nail art and care services. Includes manicures, nail extensions, and beautiful designs for every occasion.',
     icon: <Brush className="w-6 h-6" />,
     category: 'creative',
-    details: 'Express your creativity with stunning nail art designs. Includes professional manicure and long-lasting polish application.',
+    details: 'Our nail care services include cutting, shaping, polishing, and unique nail art designs. We use premium products for durability and shine. Choose from trendy designs or customize your own for a personalized look. Perfect for parties, weddings, or everyday style.',
     image: NailArtImg
   },
   {
     id: 'tattoo',
     title: 'Tattoo Design',
-    description: 'Permanent body art by skilled artists',
+    description: 'Get stunning, custom-designed tattoos by skilled professionals. From minimalistic to bold artwork, we create designs that tell your story.',
     icon: <Award className="w-6 h-6" />,
     category: 'creative',
-    details: 'Custom tattoo designs created by our experienced artists. From small delicate pieces to large detailed artwork.',
+    details: 'Our tattoo artists specialize in creating unique, personalized designs using safe and hygienic techniques. From small, delicate patterns to detailed masterpieces, we ensure precision and creativity. Long-lasting ink and pain-minimized procedures for a comfortable experience.',
     image: TattooDesignImg
   },
   {
     id: 'manicure-pedicure',
     title: 'Manicure & Pedicure',
-    description: 'Full hand & foot care treatment',
+    description: 'Pamper your hands and feet with our professional manicure and pedicure services. Includes nail care, exfoliation, and relaxing massage.',
     icon: <Heart className="w-6 h-6" />,
     category: 'creative',
-    details: 'Complete nail care including cutting, shaping, cuticle care, and relaxing hand and foot massage.',
+    details: 'Our manicure and pedicure service ensures complete nail care, including shaping, cuticle cleaning, and hydrating treatments. We also provide soothing massages and premium polish options for a perfect finish. Ideal for maintaining healthy and beautiful hands and feet.',
     image: ManicurePedicureImg
   },
-  
   {
     id: 'dress-sale',
     title: 'Dress Sales',
-    description: 'Purchase designer and traditional boutique dresses',
+    description: 'Shop exclusive boutique dresses, including designer gowns, lehengas, and sarees. Perfect for weddings, parties, and special occasions.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
-    details: 'Explore a range of boutique dresses like Lehenga, Maxi, Gowns, Sarees, and more — all available for purchase.',
+    details: 'Explore a wide range of traditional and modern outfits crafted with premium fabrics. From bridal lehengas to party gowns, we offer elegant designs that fit every style and occasion. Each piece is made to enhance your grace and sophistication.',
     // image: DressSalesImg
   },
   {
     id: 'dress-rental',
     title: 'Dress Rental',
-    description: 'Rent beautiful boutique dresses for special occasions',
+    description: 'Rent exquisite boutique dresses for weddings, receptions, and parties. Affordable, stylish, and available in various sizes.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
-    details: 'Choose from a variety of boutique dresses including Bridal Wear, Lehenga, Maxi, and Gowns, available for rent.',
+    details: 'Choose from our premium collection of lehengas, gowns, and bridal outfits available for rent. Perfect for those who want a luxurious look without spending too much. Clean, well-maintained, and ready for your special day.',
     // image: DressRentalImg
   },
   {
     id: 'jewellery-sale',
     title: 'Jewellery Sales',
-    description: 'Own elegant boutique jewellery pieces',
+    description: 'Shop exquisite bridal and party jewelry sets crafted with premium quality. Includes traditional and contemporary designs.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
-    details: 'Shop for traditional and modern jewellery like Bridal Sets, Earrings, and Temple Jewellery — perfect for every look.',
+    details: 'Our jewelry collection features bridal sets, earrings, chokers, and temple jewelry designed to elevate your look. Each piece is crafted with attention to detail for timeless elegance. Perfect for weddings and festive occasions.',
     // image: JewellerySalesImg
   },
   {
     id: 'jewellery-rental',
     title: 'Jewellery Rental',
-    description: 'Rent stunning jewellery for weddings & events',
+    description: 'Rent stunning jewelry pieces for weddings and events. Affordable, stylish, and available in various traditional designs.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
-    details: 'Affordable rental options for bridal and party jewellery, including heavy sets and designer pieces for all functions.',
+    details: 'Our rental jewelry collection offers luxurious designs for every occasion at a fraction of the cost. Choose from bridal sets, earrings, and statement pieces that complete your outfit. High-quality, sanitized, and delivered ready to wear.',
     // image: JewelleryRentalImg
   },
-
-
-
   {
     id: 'courses',
     title: 'Beauty Courses',
-    description: 'Professional beauty training programs',
+    description: 'Learn professional beauty techniques with our certified training programs. Perfect for aspiring makeup artists and beauty professionals.',
     icon: <BookOpen className="w-6 h-6" />,
     category: 'creative',
-    details: 'Learn professional beauty techniques with our certified training courses. Perfect for aspiring beauty professionals.',
+    details: 'Our courses cover hairstyling, skincare, nail art, and advanced makeup techniques. Certified trainers ensure hands-on practice and industry-ready skills. Ideal for beginners and professionals looking to upgrade their expertise and start a successful beauty career.',
     image: BeautyCoursesImg
   }
+
 ];
 
 const categories = [
