@@ -13,7 +13,7 @@ import SkinBrighteningImg from './SkinBrightening.jpeg';
 import NailArtImg from './NailArt.jpg';
 import TattooDesignImg from './TattooDesign.jpeg';
 import ManicurePedicureImg from './ManicurePedicure.jpeg';
-import BeautyCoursesImg from './BeautyCourses.jpeg';
+import BeautyCoursesImg from './course9.jpg';
 
 export {
   HairImg,

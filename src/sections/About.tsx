@@ -150,7 +150,7 @@ const About = () => {
                   <div className="text-strawberry-600 mb-4 flex justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 animate-heartbeat">
                   {value.icon}
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 group-hover:text-strawberry-600 transition-colors duration-300">{value.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 group-hover:text-strawberry-600 transition-colours duration-300">{value.title}</h3>
                   <p className="text-sm sm:text-base text-gray-600">{value.description}</p>
                 </div>
               </ScrollAnimations>

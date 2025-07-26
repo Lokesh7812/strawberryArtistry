@@ -13,61 +13,307 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
-    {
-      id: 1,
-      name: "Priya Sharma",
-      role: "Bride",
-      image:g6,
-      content: "I felt absolutely gorgeous on my wedding day thanks to Strawberryartistry's talented team! The bridal makeup was flawless and lasted the entire day. Every guest complimented my look.",
-      rating: 5,
-      location: "Madurai"
-    },
-    {
-      id: 2,
-      name: "Janani Krishnan",
-      role: "Beauty Course Student",
-      image:g5,
-      content: "Their beautician course changed my career path and gave me confidence! The training was comprehensive and the instructors were incredibly supportive. Now I have my own salon!",
-      rating: 5,
-      location: "Madurai"
-    },
-    {
-      id: 3,
-      name: "Divya Reddy",
-      role: "Regular Customer",
-      image: g11,
-      content: "I love how natural my hair extensions look! The quality is amazing and the application was so professional. I've been a loyal customer for 2 years now.",
-      rating: 5,
-      location: "Madurai"
-    },
-    {
-      id: 4,
-      name: "Meera Patel",
-      role: "Bride",
-      image: g15,
-      content: "The microblading service was exceptional! My eyebrows look perfect every morning. The artist was skilled and made me feel comfortable throughout the process.",
-      rating: 5,
-      location: "Madurai"
-    },
-    {
-      id: 5,
-      name: "Kavya Nair",
-      role: "Working Professional",
-      image: g16,
-      content: "The nail art here is incredible! I get compliments everywhere I go. The designs are creative and the service is always professional. Highly recommended!",
-      rating: 5,
-      location: "Madurai"
-    },
-    {
-      id: 6,
-      name: "Aishwarya Kumar",
-      role: "Bride",
-      image: g3,
-      content: "My wedding photos turned out amazing thanks to their skilled makeup artists! The attention to detail was incredible and they made my special day perfect.",
-      rating: 5,
-      location: "Madurai"
-    }
-  ];
+  {
+    id: 1,
+    name: "Priya Sharma",
+    role: "Bride",
+    image: g6,
+    content: "Strawberryartistry made me feel like a queen on my wedding day. The makeup lasted through the tears, dances, and joy!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 2,
+    name: "Janani Krishnan",
+    role: "Beauty Course Student",
+    image: g5,
+    content: "The beautician course gave me real-world skills and confidence. I now proudly run my own salon in my hometown!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 3,
+    name: "Divya Reddy",
+    role: "Regular Customer",
+    image: g11,
+    content: "Their hair extensions look so natural, I constantly get compliments. It’s been 2 years and I won’t go anywhere else!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 4,
+    name: "Meera Patel",
+    role: "Bride",
+    image: g15,
+    content: "The microblading artist was so skilled and gentle. My brows look perfect every single morning with no effort!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 5,
+    name: "Kavya Nair",
+    role: "Working Professional",
+    image: g16,
+    content: "Their nail art is unbelievably creative and long-lasting. It’s my stress-buster visit every month!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 6,
+    name: "Aishwarya Kumar",
+    role: "Bride",
+    image: g3,
+    content: "My bridal photos turned out stunning thanks to their flawless makeup. They made me feel calm and pampered too!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 7,
+    name: "Sneha Raj",
+    role: "Model",
+    image: g3,
+    content: "The makeup stayed flawless through multiple shoots. Their artists understand camera-ready looks perfectly!",
+    rating: 5,
+    location: "Chennai"
+  },
+  {
+    id: 8,
+    name: "Anitha Mohan",
+    role: "Corporate Trainer",
+    image: g6,
+    content: "The facial glow I got before my big seminar was unbeatable. Strawberryartistry is now my go-to for skin prep!",
+    rating: 5,
+    location: "Trichy"
+  },
+  {
+    id: 9,
+    name: "Revathi Iyer",
+    role: "Bride",
+    image: g11,
+    content: "From consultation to finish, their bridal package was seamless. I felt truly special and heard throughout!",
+    rating: 5,
+    location: "Coimbatore"
+  },
+  {
+    id: 10,
+    name: "Deepika Balan",
+    role: "Beauty Student",
+    image: g15,
+    content: "The trainers are friendly yet professional. I now take freelance makeup bookings with total confidence!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 11,
+    name: "Sowmya Ravi",
+    role: "Bride",
+    image: g16,
+    content: "Mehendi, facial, and saree draping — everything was done with love. Their bridal care is holistic and stress-free!",
+    rating: 5,
+    location: "Salem"
+  },
+  {
+    id: 12,
+    name: "Sandhya Vinod",
+    role: "Doctor",
+    image: g5,
+    content: "Even after long hospital shifts, their services bring me peace. The staff is warm, and the ambiance is so calming!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 13,
+    name: "Haritha Sen",
+    role: "Fashion Blogger",
+    image: g15,
+    content: "Every shoot I’ve done post their makeup has gone viral. They truly enhance your natural features beautifully!",
+    rating: 5,
+    location: "Tirunelveli"
+  },
+  {
+    id: 14,
+    name: "Lakshmi Menon",
+    role: "Teacher",
+    image: g11,
+    content: "Even on short notice, they deliver magic. I always leave their salon feeling more confident and vibrant!",
+    rating: 5,
+    location: "Theni"
+  },
+  {
+    id: 15,
+    name: "Bhavya Suresh",
+    role: "Bride",
+    image: g3,
+    content: "From pre-wedding glow to the final touch-up, everything was perfect. Thank you for making me shine, truly!",
+    rating: 5,
+    location: "Dindigul"
+  },
+  {
+    id: 16,
+    name: "Nisha Varun",
+    role: "Makeup Artist",
+    image: g6,
+    content: "The advanced makeup course helped me land gigs in the film industry. Strawberryartistry truly changed my life!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 17,
+    name: "Aaradhana Nair",
+    role: "Student",
+    image: g5,
+    content: "I joined the summer internship, and it was career-changing. Real clients, real feedback, real growth!",
+    rating: 5,
+    location: "Virudhunagar"
+  },
+  {
+    id: 18,
+    name: "Smitha Ravikumar",
+    role: "Fashion Designer",
+    image: g15,
+    content: "Their hairstylists are absolute geniuses! I always get my look exactly how I imagined — or better!",
+    rating: 5,
+    location: "Karaikudi"
+  },
+  {
+    id: 19,
+    name: "Gayathri Rajan",
+    role: "Bride",
+    image: g11,
+    content: "Bridal makeup, saree tying, and even helping calm my nerves — their team goes above and beyond!",
+    rating: 5,
+    location: "Tiruppur"
+  },
+  {
+    id: 20,
+    name: "Dhanya Priya",
+    role: "Housewife",
+    image: g16,
+    content: "Their skin treatments are pure magic. I feel younger, fresher, and happier after every visit!",
+    rating: 5,
+    location: "Kovilpatti"
+  },
+  {
+    id: 21,
+    name: "Rithika Srinivasan",
+    role: "Event Host",
+    image: g15,
+    content: "I host 3–4 shows a week and they are my styling saviors. Always on time, always on point!",
+    rating: 5,
+    location: "Erode"
+  },
+  {
+    id: 22,
+    name: "Vaishnavi Manoj",
+    role: "Bride",
+    image: g5,
+    content: "Booked them for both engagement and reception. Never felt so pretty and comfortable at once!",
+    rating: 5,
+    location: "Karur"
+  },
+  {
+    id: 23,
+    name: "Yamini Selvan",
+    role: "Salon Owner",
+    image: g3,
+    content: "Trainers are humble and experienced. I now train my own staff using the same methods they taught me!",
+    rating: 5,
+    location: "Sivakasi"
+  },
+  {
+    id: 24,
+    name: "Renu Haridas",
+    role: "IT Employee",
+    image: g6,
+    content: "The only place I trust after long work weeks. Their massages and facials are true therapy!",
+    rating: 5,
+    location: "Chennai"
+  },
+  {
+    id: 25,
+    name: "Anjali Prabhu",
+    role: "Bride",
+    image: g16,
+    content: "They prepped my skin like a pro before the big day. My glow was natural and radiant in every photo!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 26,
+    name: "Kirthika Uday",
+    role: "Fashion Influencer",
+    image: g5,
+    content: "Each makeup session with them becomes content for my followers! Truly Insta-worthy transformations!",
+    rating: 5,
+    location: "Trichy"
+  },
+  {
+    id: 27,
+    name: "Harshita Balaji",
+    role: "College Student",
+    image: g6,
+    content: "I now do my own makeup confidently after their beginner’s workshop. Affordable and empowering!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 28,
+    name: "Varshini Gopal",
+    role: "Bride",
+    image: g5,
+    content: "Traditional saree draping and soft glam makeup — just the vibe I wanted for my South Indian wedding!",
+    rating: 5,
+    location: "Sivagangai"
+  },
+  {
+    id: 29,
+    name: "Shruthi Ramesh",
+    role: "HR Executive",
+    image: g15,
+    content: "I always look forward to their weekend beauty services. Best place to recharge and glow!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+    id: 30,
+    name: "Pooja Arul",
+    role: "Bride",
+    image: g16,
+    content: "Reception night was magical thanks to their elegant styling. Every photo looks like a dream!",
+    rating: 5,
+    location: "Thanjavur"
+  },
+  {
+    id: 31,
+    name: "Geetha Lakshmi",
+    role: "Makeup Enthusiast",
+    image: g11,
+    content: "Strawberryartistry helped me turn passion into profession. I now do bridal makeup part-time confidently!",
+    rating: 5,
+    location: "Madurai"
+  },
+  {
+  id: 32,
+  name: "Nivetha Saran",
+  role: "Bride",
+  image: g15,
+  content: "The team understood exactly what I wanted for my bridal look. Every detail was perfect from eyes to lips!",
+  rating: 5,
+  location: "Madurai"
+},
+{
+  id: 33,
+  name: "Ishwarya Ilango",
+  role: "Beauty Course Graduate",
+  image: g5,
+  content: "Their hands-on training and live demos boosted my skills. Now I confidently take bridal and party makeup bookings!",
+  rating: 5,
+  location: "Tuticorin"
+}
+
+  
+];
+
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -213,7 +459,7 @@ const Testimonials = () => {
                       className="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover mr-3 sm:mr-4 group-hover:scale-110 transition-transform duration-300"
                   />
                   <div>
-                      <h3 className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-strawberry-600 transition-colors duration-300">{testimonial.name}</h3>
+                      <h3 className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-strawberry-600 transition-colours duration-300">{testimonial.name}</h3>
                     <p className="text-gray-600 text-xs sm:text-sm">{testimonial.role}</p>
                   </div>
                   </div>

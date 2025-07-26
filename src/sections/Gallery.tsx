@@ -20,7 +20,7 @@ import g15 from '../assets/g15.jpg';
 import g16 from '../assets/g16.jpg';
 import g17 from '../assets/g17.jpg';
 import course1 from '../assets/course1.jpg';
-import course2 from '../assets/course2.jpg';
+
 import course3 from "../assets/course3.jpg";
 import course4 from "../assets/course4.jpg";
 import course5 from "../assets/course5.jpg";
@@ -42,6 +42,20 @@ import ab10 from '../assets/ab10.jpg'
 import ab11 from '../assets/ab11.jpg'
 import ab12 from '../assets/ab12.jpg'
 import ab13 from '../assets/ab13.jpg'
+import ab14 from '../assets/ab14.jpg'
+import ab15 from '../assets/ab15.jpg'
+import ab16 from '../assets/ab16.jpg'
+import ab17 from '../assets/ab17.jpg'
+import ab18 from '../assets/ab18.jpg'
+import ab19 from '../assets/ab19.jpg'
+import ab20 from '../assets/ab20.jpg'
+import ab21 from '../assets/ab21.jpg'
+import bot1 from '../assets/bot1.jpg'
+import bot2 from '../assets/bot2.jpg'
+import bot3 from '../assets/bot3.jpg'
+import bot4 from '../assets/bot4.jpg'
+import bot5 from '../assets/bot5.jpg'
+import bot6 from '../assets/bot6.jpg'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -51,7 +65,8 @@ const Gallery = () => {
     { id: 'all', name: 'All' },
     { id: 'bridal', name: 'Bridal' },
     { id: 'hair', name: 'Hair' },
-    { id: 'academy', name: 'Academy' }
+    { id: 'academy', name: 'Academy' },
+    {id:'boutique',name:'Boutique'}
   ];
 
   const images = [
@@ -73,7 +88,7 @@ const Gallery = () => {
   { id: 16, src: g16, category: "bridal" },
   { id: 17, src: g12, category: "bridal" },
   { id: 18, src: course1, category: "academy" },
-  { id: 19, src: course2, category: "academy" },
+
   { id: 20, src: course3, category: "academy" },
   { id: 21, src: course4, category: "academy" },
   { id: 22, src: course5, category: "academy" },
@@ -81,9 +96,15 @@ const Gallery = () => {
   { id: 24, src: course7, category: "academy" },
   { id: 25, src: course8, category: "academy" },
   { id: 26, src: course9, category: "academy" },
-  { id: 27, src: course10, category: "academy" },
- 
- 
+  { id: 27, src: course10, category: "academy" }, 
+  { id: 28, src: bot1, category: "boutique" }, 
+  { id: 29, src: bot2, category: "boutique" }, 
+  { id: 30, src: bot3, category: "boutique" }, 
+  { id: 31, src: bot4, category: "boutique" }, 
+  { id: 32, src: bot5, category: "boutique" }, 
+  { id: 33, src: bot6, category: "boutique" }, 
+
+  
 ];
 
 const afterBefore=[
@@ -96,11 +117,22 @@ const afterBefore=[
   { id: 6, src: ab6, category: "bridal" },
   { id: 7, src: ab7, category: "hair" },
   { id: 8, src: ab8, category: "bridal" },
+  {id:9,src:ab9,category:""},
+  {id:11,src:ab11,category:""},
   
   { id: 10, src: ab10, category: "bridal" },
  
   { id: 12, src: ab12, category: "bridal" },
-  { id: 13, src: ab13},
+  { id: 13, src: ab13, category: "" },
+  { id: 14, src: ab14, category: "" },
+  { id: 15, src: ab15, category: "" },
+  { id: 16, src: ab16, category: "" },
+  { id: 17, src: ab17, category: "" },
+  { id: 18, src: ab18, category: "" },
+  { id: 19, src: ab19, category: "" },
+  { id: 20, src: ab20, category: "" },
+  { id: 21, src: ab21, category: "" }
+
   
 ]
   const filteredImages = selectedCategory === 'all' 
@@ -197,7 +229,7 @@ const afterBefore=[
           <div className="relative max-w-4xl max-h-full">
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-2 sm:top-4 right-2 sm:right-4 text-white hover:text-gray-300 transition-colors z-10 p-2"
+              className="absolute top-2 sm:top-4 right-2 sm:right-4 text-white hover:text-gray-300 transition-colours z-10 p-2"
             >
               <X size={24} className="sm:w-8 sm:h-8" />
             </button>

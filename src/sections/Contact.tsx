@@ -35,7 +35,7 @@ const Contact = () => {
                 <div className="space-y-6 sm:space-y-8">
                   {/* Address */}
                   <div className="flex items-start space-x-4 hover-lift group">
-                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colors duration-300">
+                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colours duration-300">
                       <MapPin className="w-6 h-6 text-strawberry-600" />
                     </div>
                     <div>
@@ -49,7 +49,7 @@ const Contact = () => {
 
                   {/* Phone */}
                   <div className="flex items-start space-x-4 hover-lift group">
-                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colors duration-300">
+                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colours duration-300">
                       <Phone className="w-6 h-6 text-strawberry-600" />
                     </div>
                     <div>
@@ -61,7 +61,7 @@ const Contact = () => {
 
                   {/* Email */}
                   <div className="flex items-start space-x-4 hover-lift group">
-                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colors duration-300">
+                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colours duration-300">
                       <Mail className="w-6 h-6 text-strawberry-600" />
                     </div>
                     <div>
@@ -73,7 +73,7 @@ const Contact = () => {
 
                   {/* Working Hours */}
                   <div className="flex items-start space-x-4 hover-lift group">
-                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colors duration-300">
+                    <div className="bg-strawberry-100 p-3 rounded-lg group-hover:bg-strawberry-200 transition-colours duration-300">
                       <Clock className="w-6 h-6 text-strawberry-600" />
                     </div>
                     <div>

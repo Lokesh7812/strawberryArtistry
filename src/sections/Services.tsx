@@ -10,6 +10,7 @@ import {
   Sun,
   PaintBucket,
   Brush,
+  ShoppingBag,
   Crown,
   Award,
   RefreshCw,
@@ -41,7 +42,7 @@ interface Service {
   title: string;
   description: string;
   icon: React.ReactNode;
-  category: 'hair' | 'skin' | 'creative';
+  category: 'hair' | 'skin' | 'creative'|'boutique';
   details: string;
   image?: string;
 }
@@ -53,17 +54,35 @@ const services: Service[] = [
     description: 'Add length & volume with premium quality extensions',
     icon: <Crown className="w-6 h-6" />,
     category: 'hair',
-    details: 'Transform your look instantly with our premium hair extensions. We offer various lengths, colors, and textures to match your natural hair perfectly.',
+    details: 'Transform your look instantly with our premium hair extensions. We offer various lengths, colours, and textures to match your natural hair perfectly.',
     image: HairImg
   },
   {
-    id: 'microblading',
-    title: 'Microblading',
+    id: 'microblading-eyebrow',
+    title: 'Eyebrow Microblading',
     description: 'Perfect eyebrows with semi-permanent technique',
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
-    details: 'Achieve perfectly shaped eyebrows with our expert microblading service. Semi-permanent results that last 1-2 years.',
-    image:MicrobladingImg
+    details: 'Achieve perfectly shaped eyebrows with our expert microblading service. Semi-permanent results that last 1–2 years.',
+    image: MicrobladingImg
+  },
+  {
+    id: 'microblading-scalp',
+    title: 'Scalp Pigmentation',
+    description: 'Hair-like pigmentation for fuller-looking scalp',
+    icon: <Target className="w-6 h-6" />,
+    category: 'skin',
+    details: 'Restore the appearance of hair density with our scalp pigmentation microblading. A great solution for thinning hair.',
+    // image: ScalpPigmentationImg
+  },
+  {
+    id: 'microblading-lip',
+    title: 'Lip Pigmentation',
+    description: 'Enhance lip colour and shape with microblading',
+    icon: <Target className="w-6 h-6" />,
+    category: 'skin',
+    details: 'Add natural tint and definition to your lips with our lip pigmentation microblading technique. Long-lasting and safe.',
+    // image: LipPigmentationImg
   },
   {
     id: 'hair-spa',
@@ -84,12 +103,12 @@ const services: Service[] = [
     image: KeratinTreatmentImg
   },
   {
-    id: 'hair-coloring',
-    title: 'Hair Coloring',
+    id: 'hair-colouring',
+    title: 'Hair Colouring',
     description: 'Trendy or classic shades to suit your style',
     icon: <Palette className="w-6 h-6" />,
     category: 'hair',
-    details: 'Express yourself with vibrant colors or classic tones. Our colorists use premium products for long-lasting, healthy results.',
+    details: 'Express yourself with vibrant colours or classic tones. Our colourists use premium products for long-lasting, healthy results.',
     image: HairColoringImg
   },
   {
@@ -103,12 +122,21 @@ const services: Service[] = [
   },
   {
     id: 'hair-smoothening',
-    title: 'Hair Smoothening / Dandruff',
+    title: 'Hair Smoothening Treatment',
     description: 'Straighten & shine for manageable hair',
     icon: <Zap className="w-6 h-6" />,
     category: 'hair',
-    details: 'Achieve straight, manageable hair with our advanced smoothening treatments. Say goodbye to daily styling struggles.',
+    details: 'Achieve silky straight and frizz-free hair with our professional smoothening treatment. Perfect for taming unmanageable hair and reducing daily styling efforts.',
     image: HairSmootheningImg
+  },
+  {
+    id: 'hair-dandruff-treatment',
+    title: 'Hair Dandruff Treatment',
+    description: 'Say goodbye to dandruff and scalp irritation',
+    icon: <Zap className="w-6 h-6" />,
+    category: 'hair',
+    details: 'Treat persistent dandruff and soothe your scalp with our targeted anti-dandruff hair therapy. Promotes a healthier, itch-free scalp and stronger hair.',
+    // image: HairDandruffImg
   },
   {
     id: 'hair-growth',
@@ -120,12 +148,12 @@ const services: Service[] = [
     image: HairGrowthImg
   },
   {
-    id: 'global-coloring',
+    id: 'global-colouring',
     title: 'Global Hair Coloring',
-    description: 'Full-head color change for dramatic transformation',
+    description: 'Full-head colour change for dramatic transformation',
     icon: <PaintBucket className="w-6 h-6" />,
     category: 'hair',
-    details: 'Complete color transformation with our global coloring service. Perfect for those ready for a bold new look.',
+    details: 'Complete colour transformation with our global colouring service. Perfect for those ready for a bold new look.',
     image: GlobalColoringImg
   },
   {
@@ -182,6 +210,46 @@ const services: Service[] = [
     details: 'Complete nail care including cutting, shaping, cuticle care, and relaxing hand and foot massage.',
     image: ManicurePedicureImg
   },
+  
+  {
+    id: 'dress-sale',
+    title: 'Dress Sales',
+    description: 'Purchase designer and traditional boutique dresses',
+    icon: <ShoppingBag className="w-6 h-6" />,
+    category: 'boutique',
+    details: 'Explore a range of boutique dresses like Lehenga, Maxi, Gowns, Sarees, and more — all available for purchase.',
+    // image: DressSalesImg
+  },
+  {
+    id: 'dress-rental',
+    title: 'Dress Rental',
+    description: 'Rent beautiful boutique dresses for special occasions',
+    icon: <ShoppingBag className="w-6 h-6" />,
+    category: 'boutique',
+    details: 'Choose from a variety of boutique dresses including Bridal Wear, Lehenga, Maxi, and Gowns, available for rent.',
+    // image: DressRentalImg
+  },
+  {
+    id: 'jewellery-sale',
+    title: 'Jewellery Sales',
+    description: 'Own elegant boutique jewellery pieces',
+    icon: <ShoppingBag className="w-6 h-6" />,
+    category: 'boutique',
+    details: 'Shop for traditional and modern jewellery like Bridal Sets, Earrings, and Temple Jewellery — perfect for every look.',
+    // image: JewellerySalesImg
+  },
+  {
+    id: 'jewellery-rental',
+    title: 'Jewellery Rental',
+    description: 'Rent stunning jewellery for weddings & events',
+    icon: <ShoppingBag className="w-6 h-6" />,
+    category: 'boutique',
+    details: 'Affordable rental options for bridal and party jewellery, including heavy sets and designer pieces for all functions.',
+    // image: JewelleryRentalImg
+  },
+
+
+
   {
     id: 'courses',
     title: 'Beauty Courses',
@@ -197,7 +265,9 @@ const categories = [
   { id: 'all', label: 'All Services', icon: <Star className="w-4 h-4" /> },
   { id: 'hair', label: 'Hair Care', icon: <Scissors className="w-4 h-4" /> },
   { id: 'skin', label: 'Skin Care', icon: <Sun className="w-4 h-4" /> },
-  { id: 'creative', label: 'Creative', icon: <Brush className="w-4 h-4" /> }
+  { id: 'creative', label: 'Creative', icon: <Brush className="w-4 h-4" /> },
+  { id: 'boutique', label: 'Boutique', icon: <ShoppingBag className="w-4 h-4" /> }
+
 ];
 
 export default function ServicesSection() {
@@ -252,10 +322,10 @@ export default function ServicesSection() {
             >
               <div className="relative p-6 pb-4">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-100 to-pink-200 rounded-xl flex items-center justify-center text-pink-600 group-hover:text-pink-800 transition-colors duration-300">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-100 to-pink-200 rounded-xl flex items-center justify-center text-pink-600 group-hover:text-pink-800 transition-colours duration-300">
                     {service.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-pink-700 transition-colors duration-300">
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-pink-700 transition-colours duration-300">
                     {service.title}
                   </h3>
                 </div>
@@ -298,7 +368,7 @@ export default function ServicesSection() {
                 <div className="flex gap-3">
                   <button
                     onClick={() => setSelectedService(null)}
-                    className="flex-1 bg-pink-100 text-pink-700 py-3 px-4 rounded-xl font-medium hover:bg-pink-200 transition-colors duration-300"
+                    className="flex-1 bg-pink-100 text-pink-700 py-3 px-4 rounded-xl font-medium hover:bg-pink-200 transition-colours duration-300"
                   >
                     Close
                   </button>
