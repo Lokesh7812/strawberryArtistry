@@ -178,7 +178,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     onClick={() => scrollToSection('#services')}
                     className="hover:text-strawberry-400 transition-colors"
                   >
-                    Hair Extensions
+                    Hair Services
                   </button>
                 </li>
                 <li>
@@ -186,7 +186,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     onClick={() => scrollToSection('#services')}
                     className="hover:text-strawberry-400 transition-colors"
                   >
-                    Microblading
+                    Microblading service
                   </button>
                 </li>
                 <li>
@@ -194,7 +194,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     onClick={() => scrollToSection('#services')}
                     className="hover:text-strawberry-400 transition-colors"
                   >
-                    Nail Art
+                    boutique
                   </button>
                 </li>
               </ul>
@@ -205,7 +205,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <div className="space-y-2 text-gray-300 text-sm sm:text-base">
                 <div className="flex items-center space-x-2">
                   <Phone size={16} className="flex-shrink-0" />
-                  <span>+91 9876543210</span>
+                  <span>+91 9080925492</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin size={16} className="flex-shrink-0" />

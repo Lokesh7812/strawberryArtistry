@@ -41,8 +41,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-gray-900">Address</h3>
                       <p className="text-gray-600 text-sm sm:text-base">
-                         HIG-11, 80 Feet Rd, next to Midas, New LIG Colony, Anna Nagar, Madurai<br />
-                        , Tamil Nadu 625020
+                         HIG-11, 80 Feet Rd, next to Midas, New LIG Colony, Anna Nagar, Madurai,<br />
+                        Tamil Nadu 625020
                       </p>
                     </div>
                   </div>

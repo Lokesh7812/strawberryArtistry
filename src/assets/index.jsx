@@ -14,8 +14,22 @@ import NailArtImg from './NailArt.jpg';
 import TattooDesignImg from './TattooDesign.jpeg';
 import ManicurePedicureImg from './ManicurePedicure.jpeg';
 import BeautyCoursesImg from './course9.jpg';
+import Dandruff from './hairdandruff.jpg';
+import jewelleryrentimg from './jewellrent.jpg';
+import jewellerysaleimg from './jewellerysale.jpg';
+import Lippigmentation from './lipPigmentation.jpg';
+import Scalp from './Scalepigmentation.jpg';
+import Dressrent from './dressrental.jpg';
+import Dresssale from './dresssales.jpg';
 
 export {
+  Dandruff,
+  jewelleryrentimg,
+  jewellerysaleimg,
+  Lippigmentation,
+  Scalp,
+  Dressrent,
+  Dresssale,
   HairImg,
   MicrobladingImg,
   HairSpaImg,

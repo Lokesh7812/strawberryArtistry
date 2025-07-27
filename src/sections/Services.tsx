@@ -33,7 +33,14 @@ import {
   NailArtImg,
   TattooDesignImg,
   ManicurePedicureImg,
-  BeautyCoursesImg
+  BeautyCoursesImg,
+  Dandruff,
+  jewelleryrentimg,
+  jewellerysaleimg,
+  Lippigmentation,
+  Scalp,
+  Dressrent,
+  Dresssale,
 } from '../assets';
 
 
@@ -61,21 +68,22 @@ const services: Service[] = [
   {
     id: 'microblading-eyebrow',
     title: 'Eyebrow Microblading',
-    description: 'Achieve the perfect eyebrows with our semi-permanent microblading technique. Designed to create natural-looking, defined brows that suit your face shape. Ideal for those with sparse, uneven, or thin brows.',
+    description: 'Achieve the perfect eyebrows with our semi-permanent, customized microblading technique. Designed to create natural-looking, defined brows that suit your face shape. Ideal for those with sparse, uneven, or thin brows.',
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
-    details: 'Eyebrow microblading involves implanting pigments into the skin using fine strokes to mimic natural hairs. This creates fuller, well-shaped brows that last 1–2 years. The procedure is safe, painless, and customized for your features. Perfect for effortless beauty every day.',
+    details: 'Eyebrow microblading involves implanting pigments into the skin using fine strokes to mimic natural hairs. This creates fuller, well-shaped brows that last 1–2 years. The procedure is safe, painless, and fully customized for your features. Perfect for effortless beauty every day.',
     image: MicrobladingImg
-  },
-  {
+},
+{
     id: 'microblading-scalp',
     title: 'Scalp Pigmentation',
-    description: 'Restore the look of natural hair density with our scalp pigmentation technique. Ideal for men and women experiencing thinning hair or bald spots. Creates a realistic illusion of fuller hair instantly.',
+    description: 'Restore the look of natural hair density with our customized scalp pigmentation technique. Ideal for men and women experiencing thinning hair or bald spots. Creates a realistic illusion of fuller hair instantly.',
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
-    details: 'Scalp micropigmentation is a non-surgical procedure that deposits pigment into the scalp, simulating hair follicles. It provides a natural, clean look and improves confidence. Long-lasting, low-maintenance, and suitable for all hair types. Perfect for thinning hair solutions.',
-    // image: ScalpPigmentationImg
-  },
+    details: 'Scalp micropigmentation is a non-surgical, customized procedure that deposits pigment into the scalp, simulating hair follicles. It provides a natural, clean look and improves confidence. Long-lasting, low-maintenance, and suitable for all hair types. Perfect for thinning hair solutions.',
+    image: Scalp
+},
+
   {
     id: 'microblading-lip',
     title: 'Lip Pigmentation',
@@ -83,7 +91,7 @@ const services: Service[] = [
     icon: <Target className="w-6 h-6" />,
     category: 'skin',
     details: 'Lip pigmentation microblading enhances your lip color and shape with natural pigments. It helps correct asymmetry and adds definition for a youthful look. The results last for months and require minimal upkeep. Perfect for anyone who desires effortless, beautiful lips every day.',
-    // image: LipPigmentationImg
+    image: Lippigmentation
   },
   {
     id: 'hair-spa',
@@ -137,7 +145,7 @@ const services: Service[] = [
     icon: <Zap className="w-6 h-6" />,
     category: 'hair',
     details: 'Our dandruff treatment targets the root cause of scalp flakes using medicated solutions and scalp therapy. It relieves dryness, reduces inflammation, and promotes a healthy scalp environment. Regular sessions ensure lasting results and beautiful, dandruff-free hair.',
-    // image: HairDandruffImg
+    image: Dandruff
   },
   {
     id: 'hair-growth',
@@ -151,12 +159,13 @@ const services: Service[] = [
   {
     id: 'global-colouring',
     title: 'Global Hair Coloring',
-    description: 'Experience a complete color makeover with our global coloring service. Perfect for those looking for a bold transformation or a rich, uniform shade across all strands.',
+    description: 'Experience a complete color makeover with our global coloring service, customized to complement your skin tone. Perfect for those looking for a bold transformation or a rich, uniform shade across all strands.',
     icon: <PaintBucket className="w-6 h-6" />,
     category: 'hair',
-    details: 'Global coloring provides full-head coverage in your desired shade, from natural tones to vibrant colors. We use high-quality, ammonia-free products that protect your hair. Get a stunning new look with long-lasting shine and minimal maintenance.',
+    details: 'Global coloring provides full-head coverage in your desired shade, from natural tones to vibrant colors. We carefully choose and style colors that enhance your unique skin tone for a flattering, personalized look. Our process uses high-quality, ammonia-free products that protect your hair. Get a stunning new look with long-lasting shine and minimal maintenance.',
     image: GlobalColoringImg
-  },
+},
+
   {
     id: 'hydra-facial',
     title: 'Hydra Facial',
@@ -168,7 +177,7 @@ const services: Service[] = [
   },
   {
     id: 'chemical-peel',
-    title: 'Chemical Peel',
+    title: 'Chemical Peel Treatment',
     description: 'Reveal youthful, radiant skin with our professional chemical peel treatments. Helps reduce dark spots, scars, and uneven texture for smoother skin.',
     icon: <Star className="w-6 h-6" />,
     category: 'skin',
@@ -177,7 +186,7 @@ const services: Service[] = [
   },
   {
     id: 'skin-brightening',
-    title: 'Skin Brightening',
+    title: 'Skin Brightening Treatment',
     description: 'Get an even, radiant complexion with our skin brightening treatments. Reduces dark spots and dullness for a glowing, healthy look.',
     icon: <Sparkles className="w-6 h-6" />,
     category: 'skin',
@@ -195,7 +204,7 @@ const services: Service[] = [
   },
   {
     id: 'tattoo',
-    title: 'Tattoo Design',
+    title: 'Tattoos Design',
     description: 'Get stunning, custom-designed tattoos by skilled professionals. From minimalistic to bold artwork, we create designs that tell your story.',
     icon: <Award className="w-6 h-6" />,
     category: 'creative',
@@ -218,7 +227,7 @@ const services: Service[] = [
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
     details: 'Explore a wide range of traditional and modern outfits crafted with premium fabrics. From bridal lehengas to party gowns, we offer elegant designs that fit every style and occasion. Each piece is made to enhance your grace and sophistication.',
-    // image: DressSalesImg
+    image: Dresssale
   },
   {
     id: 'dress-rental',
@@ -227,7 +236,7 @@ const services: Service[] = [
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
     details: 'Choose from our premium collection of lehengas, gowns, and bridal outfits available for rent. Perfect for those who want a luxurious look without spending too much. Clean, well-maintained, and ready for your special day.',
-    // image: DressRentalImg
+    image: Dressrent
   },
   {
     id: 'jewellery-sale',
@@ -236,7 +245,7 @@ const services: Service[] = [
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
     details: 'Our jewelry collection features bridal sets, earrings, chokers, and temple jewelry designed to elevate your look. Each piece is crafted with attention to detail for timeless elegance. Perfect for weddings and festive occasions.',
-    // image: JewellerySalesImg
+    image: jewellerysaleimg
   },
   {
     id: 'jewellery-rental',
@@ -245,7 +254,7 @@ const services: Service[] = [
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
     details: 'Our rental jewelry collection offers luxurious designs for every occasion at a fraction of the cost. Choose from bridal sets, earrings, and statement pieces that complete your outfit. High-quality, sanitized, and delivered ready to wear.',
-    // image: JewelleryRentalImg
+    image: jewelleryrentimg
   },
   {
     id: 'courses',

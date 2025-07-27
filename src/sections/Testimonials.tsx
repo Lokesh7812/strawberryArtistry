@@ -2,12 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import ScrollAnimations from '../components/ScrollAnimations';
 import ParallaxSection from '../components/ParallaxSection';
-import g6 from '../assets/g6.jpg'
-import g5 from '../assets/g5.jpg'
-import g11 from '../assets/g11.jpg'
-import g15 from '../assets/g15.jpg'
-import g16 from '../assets/g16.jpg'
-import g3 from '../assets/g3.jpg'
+import g1 from '../assets/g1.jpg';
+import g3 from '../assets/g3.jpg';
+import g4 from '../assets/g4.jpg';
+import g5 from '../assets/g5.jpg';
+import g6 from '../assets/g6.jpg';
+import g7 from '../assets/g7.jpg';
+import g8 from '../assets/g8.jpg';
+import g9 from '../assets/g9.jpg';
+import g11 from '../assets/g11.jpg';
+import g12 from '../assets/g12.jpg';
+import g13 from '../assets/g13.jpg';
+import g14 from '../assets/g14.jpg';
+import g15 from '../assets/g15.jpg';
+import g16 from '../assets/g16.jpg';
+
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,7 +26,7 @@ const Testimonials = () => {
     id: 1,
     name: "Priya Sharma",
     role: "Bride",
-    image: g6,
+    image: g1,
     content: "Strawberryartistry made me feel like a queen on my wedding day. The makeup lasted through the tears, dances, and joy!",
     rating: 5,
     location: "Madurai"
@@ -26,7 +35,7 @@ const Testimonials = () => {
     id: 2,
     name: "Janani Krishnan",
     role: "Beauty Course Student",
-    image: g5,
+    image: g3,
     content: "The beautician course gave me real-world skills and confidence. I now proudly run my own salon in my hometown!",
     rating: 5,
     location: "Madurai"
@@ -35,7 +44,7 @@ const Testimonials = () => {
     id: 3,
     name: "Divya Reddy",
     role: "Regular Customer",
-    image: g11,
+    image: g4,
     content: "Their hair extensions look so natural, I constantly get compliments. It’s been 2 years and I won’t go anywhere else!",
     rating: 5,
     location: "Madurai"
@@ -44,7 +53,7 @@ const Testimonials = () => {
     id: 4,
     name: "Meera Patel",
     role: "Bride",
-    image: g15,
+    image: g5,
     content: "The microblading artist was so skilled and gentle. My brows look perfect every single morning with no effort!",
     rating: 5,
     location: "Madurai"
@@ -53,7 +62,7 @@ const Testimonials = () => {
     id: 5,
     name: "Kavya Nair",
     role: "Working Professional",
-    image: g16,
+    image: g6,
     content: "Their nail art is unbelievably creative and long-lasting. It’s my stress-buster visit every month!",
     rating: 5,
     location: "Madurai"
@@ -62,7 +71,7 @@ const Testimonials = () => {
     id: 6,
     name: "Aishwarya Kumar",
     role: "Bride",
-    image: g3,
+    image: g7,
     content: "My bridal photos turned out stunning thanks to their flawless makeup. They made me feel calm and pampered too!",
     rating: 5,
     location: "Madurai"
@@ -71,7 +80,7 @@ const Testimonials = () => {
     id: 7,
     name: "Sneha Raj",
     role: "Model",
-    image: g3,
+    image: g8,
     content: "The makeup stayed flawless through multiple shoots. Their artists understand camera-ready looks perfectly!",
     rating: 5,
     location: "Chennai"
@@ -80,7 +89,7 @@ const Testimonials = () => {
     id: 8,
     name: "Anitha Mohan",
     role: "Corporate Trainer",
-    image: g6,
+    image: g9,
     content: "The facial glow I got before my big seminar was unbeatable. Strawberryartistry is now my go-to for skin prep!",
     rating: 5,
     location: "Trichy"
@@ -98,7 +107,7 @@ const Testimonials = () => {
     id: 10,
     name: "Deepika Balan",
     role: "Beauty Student",
-    image: g15,
+    image: g12,
     content: "The trainers are friendly yet professional. I now take freelance makeup bookings with total confidence!",
     rating: 5,
     location: "Madurai"
@@ -107,7 +116,7 @@ const Testimonials = () => {
     id: 11,
     name: "Sowmya Ravi",
     role: "Bride",
-    image: g16,
+    image: g13,
     content: "Mehendi, facial, and saree draping — everything was done with love. Their bridal care is holistic and stress-free!",
     rating: 5,
     location: "Salem"
@@ -116,7 +125,7 @@ const Testimonials = () => {
     id: 12,
     name: "Sandhya Vinod",
     role: "Doctor",
-    image: g5,
+    image: g14,
     content: "Even after long hospital shifts, their services bring me peace. The staff is warm, and the ambiance is so calming!",
     rating: 5,
     location: "Madurai"
@@ -134,7 +143,7 @@ const Testimonials = () => {
     id: 14,
     name: "Lakshmi Menon",
     role: "Teacher",
-    image: g11,
+    image: g16,
     content: "Even on short notice, they deliver magic. I always leave their salon feeling more confident and vibrant!",
     rating: 5,
     location: "Theni"
@@ -143,7 +152,7 @@ const Testimonials = () => {
     id: 15,
     name: "Bhavya Suresh",
     role: "Bride",
-    image: g3,
+    image: g1,
     content: "From pre-wedding glow to the final touch-up, everything was perfect. Thank you for making me shine, truly!",
     rating: 5,
     location: "Dindigul"
@@ -152,7 +161,7 @@ const Testimonials = () => {
     id: 16,
     name: "Nisha Varun",
     role: "Makeup Artist",
-    image: g6,
+    image: g3,
     content: "The advanced makeup course helped me land gigs in the film industry. Strawberryartistry truly changed my life!",
     rating: 5,
     location: "Madurai"
@@ -161,7 +170,7 @@ const Testimonials = () => {
     id: 17,
     name: "Aaradhana Nair",
     role: "Student",
-    image: g5,
+    image: g4,
     content: "I joined the summer internship, and it was career-changing. Real clients, real feedback, real growth!",
     rating: 5,
     location: "Virudhunagar"
@@ -170,7 +179,7 @@ const Testimonials = () => {
     id: 18,
     name: "Smitha Ravikumar",
     role: "Fashion Designer",
-    image: g15,
+    image: g5,
     content: "Their hairstylists are absolute geniuses! I always get my look exactly how I imagined — or better!",
     rating: 5,
     location: "Karaikudi"
@@ -179,7 +188,7 @@ const Testimonials = () => {
     id: 19,
     name: "Gayathri Rajan",
     role: "Bride",
-    image: g11,
+    image: g6,
     content: "Bridal makeup, saree tying, and even helping calm my nerves — their team goes above and beyond!",
     rating: 5,
     location: "Tiruppur"
@@ -188,7 +197,7 @@ const Testimonials = () => {
     id: 20,
     name: "Dhanya Priya",
     role: "Housewife",
-    image: g16,
+    image: g7,
     content: "Their skin treatments are pure magic. I feel younger, fresher, and happier after every visit!",
     rating: 5,
     location: "Kovilpatti"
@@ -197,7 +206,7 @@ const Testimonials = () => {
     id: 21,
     name: "Rithika Srinivasan",
     role: "Event Host",
-    image: g15,
+    image: g8,
     content: "I host 3–4 shows a week and they are my styling saviors. Always on time, always on point!",
     rating: 5,
     location: "Erode"
@@ -206,7 +215,7 @@ const Testimonials = () => {
     id: 22,
     name: "Vaishnavi Manoj",
     role: "Bride",
-    image: g5,
+    image: g9,
     content: "Booked them for both engagement and reception. Never felt so pretty and comfortable at once!",
     rating: 5,
     location: "Karur"
@@ -215,7 +224,7 @@ const Testimonials = () => {
     id: 23,
     name: "Yamini Selvan",
     role: "Salon Owner",
-    image: g3,
+    image: g11,
     content: "Trainers are humble and experienced. I now train my own staff using the same methods they taught me!",
     rating: 5,
     location: "Sivakasi"
@@ -224,7 +233,7 @@ const Testimonials = () => {
     id: 24,
     name: "Renu Haridas",
     role: "IT Employee",
-    image: g6,
+    image: g12,
     content: "The only place I trust after long work weeks. Their massages and facials are true therapy!",
     rating: 5,
     location: "Chennai"
@@ -233,7 +242,7 @@ const Testimonials = () => {
     id: 25,
     name: "Anjali Prabhu",
     role: "Bride",
-    image: g16,
+    image: g13,
     content: "They prepped my skin like a pro before the big day. My glow was natural and radiant in every photo!",
     rating: 5,
     location: "Madurai"
@@ -242,7 +251,7 @@ const Testimonials = () => {
     id: 26,
     name: "Kirthika Uday",
     role: "Fashion Influencer",
-    image: g5,
+    image: g14,
     content: "Each makeup session with them becomes content for my followers! Truly Insta-worthy transformations!",
     rating: 5,
     location: "Trichy"
@@ -251,7 +260,7 @@ const Testimonials = () => {
     id: 27,
     name: "Harshita Balaji",
     role: "College Student",
-    image: g6,
+    image: g15,
     content: "I now do my own makeup confidently after their beginner’s workshop. Affordable and empowering!",
     rating: 5,
     location: "Madurai"
@@ -260,7 +269,7 @@ const Testimonials = () => {
     id: 28,
     name: "Varshini Gopal",
     role: "Bride",
-    image: g5,
+    image: g16,
     content: "Traditional saree draping and soft glam makeup — just the vibe I wanted for my South Indian wedding!",
     rating: 5,
     location: "Sivagangai"
@@ -269,7 +278,7 @@ const Testimonials = () => {
     id: 29,
     name: "Shruthi Ramesh",
     role: "HR Executive",
-    image: g15,
+    image: g5,
     content: "I always look forward to their weekend beauty services. Best place to recharge and glow!",
     rating: 5,
     location: "Madurai"
@@ -278,7 +287,7 @@ const Testimonials = () => {
     id: 30,
     name: "Pooja Arul",
     role: "Bride",
-    image: g16,
+    image: g1,
     content: "Reception night was magical thanks to their elegant styling. Every photo looks like a dream!",
     rating: 5,
     location: "Thanjavur"
@@ -287,7 +296,7 @@ const Testimonials = () => {
     id: 31,
     name: "Geetha Lakshmi",
     role: "Makeup Enthusiast",
-    image: g11,
+    image: g9,
     content: "Strawberryartistry helped me turn passion into profession. I now do bridal makeup part-time confidently!",
     rating: 5,
     location: "Madurai"
@@ -296,7 +305,7 @@ const Testimonials = () => {
   id: 32,
   name: "Nivetha Saran",
   role: "Bride",
-  image: g15,
+  image: g4,
   content: "The team understood exactly what I wanted for my bridal look. Every detail was perfect from eyes to lips!",
   rating: 5,
   location: "Madurai"
@@ -305,7 +314,7 @@ const Testimonials = () => {
   id: 33,
   name: "Ishwarya Ilango",
   role: "Beauty Course Graduate",
-  image: g5,
+  image: g13,
   content: "Their hands-on training and live demos boosted my skills. Now I confidently take bridal and party makeup bookings!",
   rating: 5,
   location: "Tuticorin"
