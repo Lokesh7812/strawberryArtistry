@@ -41,7 +41,16 @@ import {
   Scalp,
   Dressrent,
   Dresssale,
-} from '../assets';
+   buns,
+  scalpTopper,
+  wigs,
+clip,
+permanenthairextension,
+ponytail,
+bands,
+  sidepatches,
+  streakcoloured,
+} from '../assets/';
 
 
 interface Service {
@@ -286,6 +295,7 @@ export default function ServicesSection() {
     : services.filter(service => service.category === activeCategory);
 
   return (
+    <>
     <section id="services" className="py-20 bg-gradient-to-br from-pink-50 via-white to-pink-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -387,5 +397,132 @@ export default function ServicesSection() {
         )}
       </div>
     </section>
+   {/* Products Section */}
+<section id="products" className="py-20 bg-gradient-to-br from-white via-pink-50 to-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-pink-700">Products</span>
+      </h2>
+      <p className="text-xl text-pink-700 max-w-3xl mx-auto leading-relaxed">
+        Explore our premium hair extension products designed for elegance and comfort.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          id: 1,
+          name: "Permanent Hair Extension",
+          desc: "Get natural length and volume with 100% real human hair permanent extensions for a seamless look.",
+          price: 7500,
+          originalPrice: 9500,
+          img: permanenthairextension
+        },
+        {
+          id: 2,
+          name: "Scalp Topper",
+          desc: "Perfect solution for thinning crown areas with a natural scalp-like appearance and lightweight comfort.",
+          price: 5500,
+          originalPrice: 7000,
+          img: scalpTopper
+        },
+        {
+          id: 3,
+          name: "Volumizers & Clip Sets",
+          desc: "Add instant fullness and volume with easy-to-apply volumizer clips made from 100% real hair.",
+          price: 4800,
+          originalPrice: 6200,
+          img: clip
+        },
+        {
+          id: 4,
+          name: "Side Patches",
+          desc: "Ideal for covering thinning areas or adding side volume for a perfect hairstyle every time.",
+          price: 2200,
+          originalPrice: 3000,
+          img: sidepatches
+        },
+        {
+          id: 5,
+          name: "Wigs",
+          desc: "High-quality wigs made from natural human hair for a realistic and stylish transformation.",
+          price: 9500,
+          originalPrice: 12000,
+          img: wigs
+        },
+        {
+          id: 6,
+          name: "Bangs",
+          desc: "Trendy bangs to change your look without cutting your natural hair – reusable and stylish.",
+          price: 1500,
+          originalPrice: 2000,
+          img: bands
+        },
+        {
+          id: 7,
+          name: "Ponytails",
+          desc: "Instant ponytail extensions that blend seamlessly and give you a sleek, elegant look.",
+          price: 3200,
+          originalPrice: 4200,
+          img: ponytail
+        },
+        {
+          id: 8,
+          name: "Streaks - Coloured Hair Extension",
+          desc: "Add vibrant color streaks without damage – available in multiple shades for a bold style.",
+          price: 1200,
+          originalPrice: 1800,
+          img: streakcoloured
+        },
+        {
+          id: 9,
+          name: "Buns",
+          desc: "Easy-to-wear buns for instant hairstyle upgrades, perfect for parties and weddings.",
+          price: 1800,
+          originalPrice: 2500,
+          img: buns
+        }
+      ].map((product, index) => {
+        const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+        return (
+          <div
+            key={product.id}
+            className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-pink-100"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+          >
+            <img src={product.img} alt={product.name} className="w-full h-56 object-cover" />
+            <div className="p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
+              <p className="text-pink-700 text-sm mb-4">{product.desc}</p>
+
+              {/* Price Section */}
+              <div className="flex items-center gap-3 mb-4">
+                <p className="text-lg font-semibold text-gray-800">₹{product.price}</p>
+                <p className="text-sm text-gray-500 line-through">₹{product.originalPrice}</p>
+                <span className="bg-pink-100 text-pink-700 text-xs font-semibold px-2 py-1 rounded-lg">
+                  {discount}% OFF
+                </span>
+              </div>
+
+              <a
+                href={`https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(product.name)}.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-gradient-to-r from-pink-500 to-pink-700 text-white py-3 rounded-xl font-medium hover:from-pink-600 hover:to-pink-800 transform hover:scale-105 transition-all duration-300"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+
+    </>
   );
 }

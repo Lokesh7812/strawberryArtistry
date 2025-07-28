@@ -10,7 +10,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ['home', 'about', 'services', 'gallery', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'services', 'products', 'gallery', 'testimonials', 'contact'];
+
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -33,6 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
+     { name: 'Products', href: '#products' }, 
     { name: 'Gallery', href: '#gallery' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' }

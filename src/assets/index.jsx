@@ -21,8 +21,27 @@ import Lippigmentation from './lipPigmentation.jpg';
 import Scalp from './Scalepigmentation.jpg';
 import Dressrent from './dressrental.jpg';
 import Dresssale from './dresssales.jpg';
+import streakcoloured from'./streakscoloured.jpg';
+import buns from'./buns.jpg';
+import scalpTopper from'./scalpTopper.jpg';
+import wigs from'./wigs.jpg';
+import sidepatches from'./sidepatches.jpg';
+import clip from'./clip.jpg';
+import permanenthairextension from'./permanenthairextension.jpg';
+import ponytail from'./ponytail.jpg';
+import bands from'./bands.jpg';
 
 export {
+  buns,
+  scalpTopper,
+  wigs,
+clip,
+permanenthairextension,
+ponytail,
+bands,
+  sidepatches,
+  streakcoloured,
+
   Dandruff,
   jewelleryrentimg,
   jewellerysaleimg,
