@@ -22,16 +22,20 @@ import Scalp from './Scalepigmentation.jpg';
 import Dressrent from './dressrental.jpg';
 import Dresssale from './dresssales.jpg';
 import streakcoloured from'./streakscoloured.jpg';
-import buns from'./buns.jpg';
-import scalpTopper from'./scalpTopper.jpg';
-import wigs from'./wigs.jpg';
-import sidepatches from'./sidepatches.jpg';
-import clip from'./clip.jpg';
+import buns from'./hairbuns.png';
+import scalpTopper from'./Scalptopper.png';
+import wigs from'./hairwigs.png';
+import sidepatches from'./sidepatch.png';
+import clip from'./volumizer.png';
 import permanenthairextension from'./permanenthairextension.jpg';
-import ponytail from'./ponytail.jpg';
-import bands from'./bands.jpg';
+import ponytail from'./ponytail.png';
+import bands from'./hairbangs.png';
+import golden from'./golden.png';
+import silkhairtopper from'./silkhairtopper.png';
 
 export {
+  golden,
+  silkhairtopper,
   buns,
   scalpTopper,
   wigs,

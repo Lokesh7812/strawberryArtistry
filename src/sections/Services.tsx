@@ -18,6 +18,9 @@ import {
   BookOpen
 } from 'lucide-react';
 import {
+  clip,
+  golden,
+  silkhairtopper,
   HairImg,
   MicrobladingImg,
   HairSpaImg,
@@ -44,13 +47,12 @@ import {
    buns,
   scalpTopper,
   wigs,
-clip,
 permanenthairextension,
 ponytail,
 bands,
   sidepatches,
   streakcoloured,
-} from '../assets/';
+} from '../assets';
 
 
 interface Service {
@@ -413,114 +415,96 @@ export default function ServicesSection() {
       {[
         {
           id: 1,
-          name: "Permanent Hair Extension",
-          desc: "Get natural length and volume with 100% real human hair permanent extensions for a seamless look.",
-          price: 7500,
-          originalPrice: 9500,
+          name: "l-Tip Permanent Hair Extension",
+          desc: "Experience natural-looking length and volume that blends seamlessly with your real hair. Crafted from 100% human hair, these extensions ensure a flawless finish.",
           img: permanenthairextension
         },
         {
           id: 2,
           name: "Scalp Topper",
-          desc: "Perfect solution for thinning crown areas with a natural scalp-like appearance and lightweight comfort.",
-          price: 5500,
-          originalPrice: 7000,
+          desc: "Perfect for thinning crown areas, our scalp topper mimics a real scalp and gives a fuller appearance. It’s breathable, lightweight, and blends naturally.",
           img: scalpTopper
         },
         {
           id: 3,
-          name: "Volumizers & Clip Sets",
-          desc: "Add instant fullness and volume with easy-to-apply volumizer clips made from 100% real hair.",
-          price: 4800,
-          originalPrice: 6200,
+          name: "Volumizers",
+          desc: "Instantly enhance hair volume with our clip-in volumizers. Made with real human hair for a natural bounce and easy daily use.",
           img: clip
         },
         {
           id: 4,
           name: "Side Patches",
-          desc: "Ideal for covering thinning areas or adding side volume for a perfect hairstyle every time.",
-          price: 2200,
-          originalPrice: 3000,
+          desc: "Add subtle volume to the sides or cover thinning areas effortlessly. Side patches offer a natural look and are simple to wear daily.",
           img: sidepatches
         },
         {
           id: 5,
-          name: "Wigs",
-          desc: "High-quality wigs made from natural human hair for a realistic and stylish transformation.",
-          price: 9500,
-          originalPrice: 12000,
+          name: "Hair Wigs",
+          desc: "Transform your look instantly with premium human hair wigs. Styled for elegance, comfort, and a natural hairline.",
           img: wigs
         },
         {
           id: 6,
-          name: "Bangs",
-          desc: "Trendy bangs to change your look without cutting your natural hair – reusable and stylish.",
-          price: 1500,
-          originalPrice: 2000,
+          name: "Hair Bangs",
+          desc: "Switch up your style with trendy, clip-in bangs. No cutting needed – just clip and go for a fresh, youthful look.",
           img: bands
         },
         {
           id: 7,
           name: "Ponytails",
-          desc: "Instant ponytail extensions that blend seamlessly and give you a sleek, elegant look.",
-          price: 3200,
-          originalPrice: 4200,
+          desc: "Achieve a sleek, polished look with our easy-to-wear ponytail extensions. Perfect for casual or festive looks.",
           img: ponytail
         },
         {
           id: 8,
           name: "Streaks - Coloured Hair Extension",
-          desc: "Add vibrant color streaks without damage – available in multiple shades for a bold style.",
-          price: 1200,
-          originalPrice: 1800,
+          desc: "Add pops of color without any dye damage. Available in multiple vibrant shades to match your personality.",
           img: streakcoloured
         },
         {
           id: 9,
-          name: "Buns",
-          desc: "Easy-to-wear buns for instant hairstyle upgrades, perfect for parties and weddings.",
-          price: 1800,
-          originalPrice: 2500,
+          name: "Hair Buns",
+          desc: "Create elegant hairstyles in seconds with our stylish bun extensions – ideal for weddings, parties, or everyday wear.",
           img: buns
+        },
+        {
+          id: 10,
+          name: "Silk Hair Topper",
+          desc: "This silk base topper offers premium coverage for thinning crowns. It mimics the scalp perfectly for a discreet finish.",
+          img: silkhairtopper
+        },
+        {
+          id: 11,
+          name: "Golden Blonde Single Clip Highlight",
+          desc: "Brighten your hair with golden blonde streaks using our reusable clip-in highlight – no chemical treatments required.",
+          img: golden
         }
-      ].map((product, index) => {
-        const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
-        return (
-          <div
-            key={product.id}
-            className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-pink-100"
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
-          >
-            <img src={product.img} alt={product.name} className="w-full h-56 object-cover" />
-            <div className="p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
-              <p className="text-pink-700 text-sm mb-4">{product.desc}</p>
-
-              {/* Price Section */}
-              <div className="flex items-center gap-3 mb-4">
-                <p className="text-lg font-semibold text-gray-800">₹{product.price}</p>
-                <p className="text-sm text-gray-500 line-through">₹{product.originalPrice}</p>
-                <span className="bg-pink-100 text-pink-700 text-xs font-semibold px-2 py-1 rounded-lg">
-                  {discount}% OFF
-                </span>
-              </div>
-
-              <a
-                href={`https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(product.name)}.`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center bg-gradient-to-r from-pink-500 to-pink-700 text-white py-3 rounded-xl font-medium hover:from-pink-600 hover:to-pink-800 transform hover:scale-105 transition-all duration-300"
-              >
-                Order Now
-              </a>
-            </div>
+      ].map((product, index) => (
+        <div
+          key={product.id}
+          className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-pink-100"
+          data-aos="fade-up"
+          data-aos-delay={index * 100}
+        >
+          <img src={product.img} alt={product.name} className="w-full h-56 object-cover" />
+          <div className="p-6">
+            <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
+            <p className="text-pink-700 text-sm mb-4 leading-relaxed">{product.desc}</p>
+            <a
+              href={`https://wa.me/919080925492?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(product.name)}.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center bg-gradient-to-r from-pink-500 to-pink-700 text-white py-3 rounded-xl font-medium hover:from-pink-600 hover:to-pink-800 transform hover:scale-105 transition-all duration-300"
+            >
+              Order Now
+            </a>
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   </div>
 </section>
+
 
 
     </>
