@@ -215,7 +215,7 @@ const services: Service[] = [
   },
   {
     id: 'tattoo',
-    title: 'Tattoos Design',
+    title: 'Tattoo Designs',
     description: 'Get stunning, custom-designed tattoos by skilled professionals. From minimalistic to bold artwork, we create designs that tell your story.',
     icon: <Award className="w-6 h-6" />,
     category: 'creative',
