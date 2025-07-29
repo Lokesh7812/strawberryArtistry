@@ -233,7 +233,7 @@ const services: Service[] = [
   },
   {
     id: 'dress-sale',
-    title: 'Dress Sales',
+    title: 'Dresses for Sales',
     description: 'Shop exclusive boutique dresses, including designer gowns, lehengas, and sarees. Perfect for weddings, parties, and special occasions.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
@@ -242,7 +242,7 @@ const services: Service[] = [
   },
   {
     id: 'dress-rental',
-    title: 'Dress Rental',
+    title: 'Rental Dresses',
     description: 'Rent exquisite boutique dresses for weddings, receptions, and parties. Affordable, stylish, and available in various sizes.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
@@ -251,7 +251,7 @@ const services: Service[] = [
   },
   {
     id: 'jewellery-sale',
-    title: 'Jewellery Sales',
+    title: 'Jewellery for Sale',
     description: 'Shop exquisite bridal and party jewelry sets crafted with premium quality. Includes traditional and contemporary designs.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
@@ -260,7 +260,7 @@ const services: Service[] = [
   },
   {
     id: 'jewellery-rental',
-    title: 'Jewellery Rental',
+    title: 'Rental Jewellery',
     description: 'Rent stunning jewelry pieces for weddings and events. Affordable, stylish, and available in various traditional designs.',
     icon: <ShoppingBag className="w-6 h-6" />,
     category: 'boutique',
