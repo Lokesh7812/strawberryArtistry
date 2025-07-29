@@ -427,7 +427,7 @@ export default function ServicesSection() {
         },
         {
           id: 3,
-          name: "Volumizers",
+          name: "Clip-In Volumizers",
           desc: "Instantly enhance hair volume with our clip-in volumizers. Made with real human hair for a natural bounce and easy daily use.",
           img: clip
         },
