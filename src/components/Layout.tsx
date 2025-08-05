@@ -261,6 +261,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
           <div className="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-sm sm:text-base">
             <p>&copy; 2025 Strawberryartistry. All rights reserved.</p>
+            <p>Designed and developed by Puvitha</p>
+
           </div>
         </div>
       </footer>

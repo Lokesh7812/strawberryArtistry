@@ -318,7 +318,143 @@ const Testimonials = () => {
   content: "Their hands-on training and live demos boosted my skills. Now I confidently take bridal and party makeup bookings!",
   rating: 5,
   location: "Tuticorin"
+},
+{
+  id: 34,
+  name: "Sneha Murugan",
+  role: "Teacher",
+  image: g1,
+  content: "The makeover they gave me for my anniversary was stunning. My students didn’t stop complimenting me!",
+  rating: 5,
+  location: "Dindigul"
+},
+{
+  id: 35,
+  name: "Keerthana Raj",
+  role: "Bride",
+  image: g6,
+  content: "From trial to the big day, their patience and creativity stood out. I looked and felt like royalty!",
+  rating: 5,
+  location: "Salem"
+},
+{
+  id: 36,
+  name: "Lavanya Menon",
+  role: "Entrepreneur",
+  image: g17,
+  content: "Booked a full makeover package before a launch event. Everyone asked who styled me. Highly recommend!",
+  rating: 5,
+  location: "Coimbatore"
+},
+{
+  id: 37,
+  name: "Meenakshi Duraikannan",
+  role: "Bride",
+  image: g16,
+  content: "They understood my vision better than I did! Every look was timeless and elegant. Thank you!",
+  rating: 5,
+  location: "Namakkal"
+},
+{
+  id: 38,
+  name: "Soundarya Vel",
+  role: "Nurse",
+  image: g3,
+  content: "After hectic shifts, their relaxing facials are all I need. So soothing and effective!",
+  rating: 5,
+  location: "Ramanathapuram"
+},
+{
+  id: 39,
+  name: "Sowmya Karthik",
+  role: "Bride",
+  image: g8,
+  content: "They made both me and my mother look stunning. The photos still make me smile!",
+  rating: 5,
+  location: "Kumbakonam"
+},
+{
+  id: 40,
+  name: "Vidhya Suresh",
+  role: "College Lecturer",
+  image: g12,
+  content: "Attended their 2-day workshop — absolutely worth it! Learned techniques I now use daily.",
+  rating: 5,
+  location: "Tirunelveli"
+},
+{
+  id: 41,
+  name: "Sangeetha Elumalai",
+  role: "Home Baker",
+  image: g13,
+  content: "They did my shoot makeup for my baking brand — I looked delicious too! Great vibe and team!",
+  rating: 5,
+  location: "Virudhunagar"
+},
+{
+  id: 42,
+  name: "Rajalakshmi Devi",
+  role: "Mother of the Bride",
+  image: g15,
+  content: "My daughter and I both got ready here. We felt pampered, elegant, and very special!",
+  rating: 5,
+  location: "Cuddalore"
+},
+{
+  id: 43,
+  name: "Priyanka Ravi",
+  role: "YouTuber",
+  image: g16,
+  content: "Their transformations are so cinematic — my followers loved my bridal vlog thanks to them!",
+  rating: 5,
+  location: "Pollachi"
+},
+{
+  id: 44,
+  name: "Deepa Narayan",
+  role: "Bride",
+  image: g7,
+  content: "Soft glam, classic draping, perfect timing — couldn’t ask for more. They’re the best in town!",
+  rating: 5,
+  location: "Perambalur"
+},
+{
+  id: 45,
+  name: "Aishwarya Mani",
+  role: "Corporate Trainer",
+  image: g1,
+  content: "I book their services before any keynote event — they know how to balance professionalism and elegance.",
+  rating: 5,
+  location: "Vellore"
+},
+{
+  id: 46,
+  name: "Divya Sri",
+  role: "Bride",
+  image: g3,
+  content: "From hairstyle trials to flawless makeup — they made my wedding stress-free and beautiful.",
+  rating: 5,
+  location: "Pudukkottai"
+},
+{
+  id: 47,
+  name: "Monika Bharathi",
+  role: "Boutique Owner",
+  image: g11,
+  content: "Their styling services help my models stand out in photoshoots. Very creative and detail-focused!",
+  rating: 5,
+  location: "Nagapattinam"
+},
+{
+  id: 48,
+  name: "Janani Vasanth",
+  role: "Bride",
+  image: g15,
+  content: "They made me glow without overdoing anything. Subtle, fresh, and picture-perfect!",
+  rating: 5,
+  location: "Thoothukudi"
 }
+
 
   
 ];
