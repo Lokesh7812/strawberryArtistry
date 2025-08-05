@@ -341,7 +341,7 @@ const Testimonials = () => {
   id: 36,
   name: "Lavanya Menon",
   role: "Entrepreneur",
-  image: g17,
+  image: g7,
   content: "Booked a full makeover package before a launch event. Everyone asked who styled me. Highly recommend!",
   rating: 5,
   location: "Coimbatore"
